@@ -8,10 +8,7 @@ function App() {
 
   return (
     <>
-    <h1>
-      Please, insert your credicard
-        
-    </h1>
+    
 
    <HomePage />
    </>

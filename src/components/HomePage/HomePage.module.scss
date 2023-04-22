@@ -1,0 +1,10 @@
+.homepage {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.homepage > * {
+    flex-basis: 50%; 
+}
+
+

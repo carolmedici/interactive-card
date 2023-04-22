@@ -1,9 +1,18 @@
 import Card from "../Card"
+import CardPhoto from "../CardPhoto"
+import style from "./HomePage.module.scss"
 
 
 const HomePage = () =>{
     return(
-       <Card />
+       
+<main className={style.homepage}>
+    
+           <CardPhoto />
+           <Card />
+</main>
+
+       
     )
 }
 
