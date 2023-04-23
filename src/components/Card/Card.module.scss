@@ -1,19 +1,54 @@
 
+
+
 h1{
     font-family: var(--font-card);
     font-size: 1rem;
+    margin: 5rem 0 1rem 0;
 }
 
 .Card{
-       
+    margin: 0 2rem ; 
     font-family: var(--font-card);
     font-size: .5rem;
+
+    &__inputWraper{
+        display: flex;
+        flex-direction: column;      
+    }
+
+    &__inputExpDate{
+        display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+
+    }
 
 }    
 
 input{
     height: 1rem;
     font-size: .5rem;
-    margin-left: .5rem;
+    margin-bottom: .6rem;
 }
 
+input[id="cardNumber"], input[id="cardName"]{
+    width: 13rem;
+}
+
+input[id="month"], input[id="year"], input[id="CVC"] {
+    width: 2rem; // Defina o tamanho desejado aqui
+  }
+
+label{
+    margin-bottom: .2rem;
+}
+
+#month{
+    width: 2rem;
+}
+
+#year{
+    width: 2rem;
+}

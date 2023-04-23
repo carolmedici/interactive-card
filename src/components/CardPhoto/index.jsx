@@ -5,9 +5,10 @@ import style from "./CardPhoto.module.scss"
 const CardPhoto = () =>{
     return(
         <>
-        <img src={cardFront} className={style.cardFront}/>
-
-        <img src={cardBack} className={style.cardBack}/>
+        <div>
+            <img src={cardFront} className={style.cardFront}/>
+            <img src={cardBack} className={style.cardBack}/>
+        </div>
         
         </>
     )
