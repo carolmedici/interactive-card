@@ -1,54 +1,82 @@
 
-
+form{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    
+}
 
 h1{
     font-family: var(--font-card);
-    font-size: 1rem;
-    margin: 5rem 0 1rem 0;
+    font-size: 1.5rem;
+    margin: 5rem 0 2rem 0;
 }
 
 .Card{
     margin: 0 2rem ; 
     font-family: var(--font-card);
-    font-size: .5rem;
+    font-size: .8rem;
 
     &__inputWraper{
         display: flex;
         flex-direction: column;      
     }
 
+    &__inputCode{
+    display: flex;
+     
+    }
+
     &__inputExpDate{
         display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+        flex-direction: column;  
  
+    }
 
+
+    &__inputCVC{
+        display: flex;
+        flex-direction: column; 
+        margin-left: 3rem; 
     }
 
 }    
 
 input{
-    height: 1rem;
-    font-size: .5rem;
+    height: 2rem;
+    font-size: .8rem;
     margin-bottom: .6rem;
+    padding-left: .5rem;
 }
 
 input[id="cardNumber"], input[id="cardName"]{
-    width: 13rem;
+    width: 20rem;
 }
 
 input[id="month"], input[id="year"], input[id="CVC"] {
-    width: 2rem; // Defina o tamanho desejado aqui
+    width: 5rem; 
   }
 
 label{
     margin-bottom: .2rem;
 }
 
-#month{
-    width: 2rem;
+
+
+button{
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    border: none;
+    background-color: var(--color-button);
+    color: white;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+         
 }
 
-#year{
-    width: 2rem;
+button:hover{
+    background-color: var(--button-hover);
+    cursor: pointer;
 }

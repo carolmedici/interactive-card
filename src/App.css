@@ -9,6 +9,8 @@
 
 #root {
  /*colors*/
+ --color-button : #803ebf ;
+ --button-hover: #bb56d4;
 
  /*fonts*/
   --font-card: 'Roboto', sans-serif;
@@ -18,5 +20,5 @@
 }
 
 body{
-  background-image: linear-gradient(to right, rgb(51, 8, 91) 50%, white 50%);
+  background-image: linear-gradient(to right, #33085b  50%, white 50%);
 }
