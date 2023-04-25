@@ -1,6 +1,7 @@
 import Card from "../Card"
-import CardPhoto from "../CardPhoto"
+
 import style from "./HomePage.module.scss"
+import React from "react"
 
 
 const HomePage = () =>{
@@ -8,8 +9,8 @@ const HomePage = () =>{
        
 <main className={style.homepage}>
     
-           <CardPhoto />
-           <Card />
+           
+    <Card />
 </main>
 
        

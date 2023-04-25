@@ -1,9 +1,45 @@
-.cardFront, .cardBack{
-    width: 20rem;
-    height: 12rem;
-    border-radius: .4rem;
-    margin: 1rem;
-
-}
-
-
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .card {
+    position: relative;
+    margin-top: 9rem;
+    width: 25rem;
+    height: 15rem;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  
+    &.flipped {
+      transform: rotateY(180deg);
+    }
+  
+    .cardFront,
+    .cardBack {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+  
+    .cardFront {
+      z-index: 2;
+    }
+  
+    .cardBack {
+      transform: rotateY(180deg);
+    }
+  }
+  
+  .cardFront {
+    border-radius: 0.4rem;
+    box-shadow: 0 .8rem 2rem rgba(0, 0, 0, 0.4);
+  }
+  
+  .cardBack {
+    border-radius: 0.4rem;
+    box-shadow: 0 .8rem 2rem rgba(0, 0, 0, 0.4);
+  }
+  
